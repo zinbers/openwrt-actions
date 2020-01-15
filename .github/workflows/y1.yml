@@ -5,7 +5,7 @@
 # Author: P3TERX
 # Blog: https://p3terx.com
 #=================================================
-name: X64-My-OpenWrt-CI
+name: y1
 
 on:
   schedule:
@@ -43,7 +43,7 @@ jobs:
       run: |
           cd openwrt
           rm -f .config
-          cp ../my-1907-x64 .config
+          cp ../y1.config .config
 
     - name: Make download
       run: |
