@@ -8,11 +8,13 @@
 name: y1
 
 on:
-  #schedule:
-  #  - cron: 0 22 * * *
-  push:
-    branches: 
-      - run
+#   schedule:
+#     - cron: 0 22 * * *
+#   push:
+#     branches: 
+#       - run
+  watch:
+    types: [started]
 
 jobs:
   build:
